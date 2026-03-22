@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section>
     <nav>
-        <img src=".HTML Practise Assets/FES.svg" alt="">
+        <img src="./HTML Practise Assets/FES.svg" class="logo" alt="logo">
         <ul>
           <li>
             <a href="#about">About</a>
@@ -18,15 +19,15 @@
         </ul>
     </nav>
     <header>
+        <div class="row">
         <div>
            <h1>Best Place to Learn FrontEnd</h1>
-           <p>Go from being an absolute beginner to a pro with a simplified process</p> 
+           <p class="subheader">Go from being an absolute beginner to a pro with a simplified process</p> 
            <button>Start Now</button>
-        <div>
+        </div>
         <figure>
             <img src="./HTML Practise Assets/laptop.png" alt="Laptop">
         </figure>
-        </div>
         </div>
     </header>
   </section>
@@ -35,32 +36,45 @@
   <main>
     <section id="about">
         <h2>About</h2>
-        <div>
-            <p>Lorem, ipsum dolor sit amet consectetur 
+        <div class="row">
+            <div class="section_description">
+                <div class="section_description--wrapper">
+                    <p class="section_description--para">
+                Lorem, ipsum dolor sit amet consectetur 
                 adipisicing elit. Assumenda nisi culpa 
                 debitis velit necessitatibus blanditiis, 
                 suscipit corrupti autem quos ad doloribus 
                 sit repellat nulla esse dolor officiis, 
                 voluptatum, quae quam.</p>
-            <p>Lorem, ipsum dolor sit amet 
+                     <p class="section_description--para">
+                Lorem, ipsum dolor sit amet 
                 consectetur adipisicing elit. Assumenda 
                 nisi culpa debitis velit necessitatibus 
                 blanditiis, suscipit corrupti autem quos 
                 ad doloribus sit repellat nulla esse dolor
                 officiis, voluptatum, quae quam.</p>
+                </div>
+                <figure class="about_image--wrapper">
+                    <img src="./HTML Practise Assets/about.jpg" alt="About">
+                </figure>
+            </div>
         </div>
-        <figure><img src="./HTML Practise Assets/about.jpg" alt="">
-        </figure>
     </section>
 
     <section id="discord">
         <h2>Discord</h2>
-        <figure>
-            <img src="./HTML Practise Assets/discord.png" alt="Discord">
-        </figure>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla consequatur illo beatae excepturi qui, a incidunt quo enim illum eius necessitatibus dolores tempora quod, ullam asperiores debitis vitae doloremque!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla consequatur illo beatae excepturi qui, a incidunt quo enim illum eius necessitatibus dolores tempora quod, ullam asperiores debitis vitae doloremque!</p>
+        <div class="row">
+            <div class="section_description">
+                <figure class="about_image--wrapper">
+                    <img src="./HTML Practise Assets/discord.png" alt="Discord">
+                </figure>
+            <div class="section_description--wrapper">
+                <p class="section_description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla consequatur illo beatae excepturi qui, a incidunt quo enim illum eius necessitatibus dolores tempora quod, ullam asperiores debitis vitae doloremque!</p>
+                <p class="section_description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla consequatur illo beatae excepturi qui, a incidunt quo enim illum eius necessitatibus dolores tempora quod, ullam asperiores debitis vitae doloremque!</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -69,21 +83,23 @@
         <h2>Contact</h2>
         <form action="">
             <span>Email</span>
-            <input type="text" placeholder="janedoe@example.com">
+            <input type="email" placeholder="janedoe@example.com">
             <span>Message</span>
-            <textarea type="text" placeholder="janedoe@example.com"></textarea>
+            <textarea type="text" placeholder="Let's get connected..."></textarea>
+            <button>Contact Us</button>
         </form>
     </section>
   </main>
 
 
   <footer>
-    <img src="./HTML Practise Assets/FES.svg" alt="">
-    <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="#courses">Courses</a>
+    <img class="footer_logo"
+        src="./HTML Practise Assets/FES.svg" alt="logo">
+    <div class="footer_links">
+        <a class="footer_link" href="#about">About</a>
+        <a class="footer_link" href="#discord">Discord</a>
+        <a class="footer_link" href="#contact">Contact</a>
+        <a class="footer_link" href="#courses">Courses</a>
     </div>
     <p>Copyright Frontend Simplified</p>
   </footer>
